@@ -1,0 +1,14 @@
+[project]
+name = "causal-inference-basic-book"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "ylearn>=0.2.0",
+    "networkx>=3.3",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
