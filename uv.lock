@@ -28,7 +28,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "networkx" },
+    { name = "networkx", specifier = ">=3.3" },
     { name = "ylearn", specifier = ">=0.2.0" },
 ]
 
