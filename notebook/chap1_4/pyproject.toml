@@ -1,5 +1,5 @@
 [project]
-name = "causal-inference-basic-book"
+name = "chap1_4"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
@@ -24,11 +24,8 @@ dependencies = [
     "werkzeug>=3.0.4",
 ]
 
-[build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
-
 [tool.uv]
 dev-dependencies = [
+    "jupyter>=1.1.1",
     "ruff>=0.6.9",
 ]

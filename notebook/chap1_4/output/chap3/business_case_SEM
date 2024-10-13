@@ -6,6 +6,6 @@ digraph G {
 	Soda_Sales [label=Soda_Sales]
 	TV_CM [label=TV_CM]
 	Temperature_C [label=Temperature_C]
-	TV_CM -> Soda_Sales [label="0.538\np-val: 0.00"]
+	TV_CM -> Soda_Sales [label="0.537\np-val: 0.00"]
 	Temperature_C -> Soda_Sales [label="2.026\np-val: 0.00"]
 }
