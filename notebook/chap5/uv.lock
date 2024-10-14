@@ -199,6 +199,8 @@ dependencies = [
     { name = "econml" },
     { name = "matplotlib" },
     { name = "numpy" },
+    { name = "pandas" },
+    { name = "pysensemakr" },
     { name = "scikit-learn" },
 ]
 
@@ -213,6 +215,8 @@ requires-dist = [
     { name = "econml", specifier = ">=0.15.1" },
     { name = "matplotlib", specifier = ">=3.9.2" },
     { name = "numpy", specifier = "<2" },
+    { name = "pandas", specifier = ">=2.2.3" },
+    { name = "pysensemakr", specifier = ">=0.0.8" },
     { name = "scikit-learn", specifier = ">=1.5.2" },
 ]
 
@@ -1468,6 +1472,23 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/83/08/13f3bce01b2061f2bbd582c9df82723de943784cf719a35ac886c652043a/pyparsing-3.1.4.tar.gz", hash = "sha256:f86ec8d1a83f11977c9a6ea7598e8c27fc5cddfa5b07ea2241edbbde1d7bc032", size = 900231 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/e5/0c/0e3c05b1c87bb6a1c76d281b0f35e78d2d80ac91b5f8f524cebf77f51049/pyparsing-3.1.4-py3-none-any.whl", hash = "sha256:a6a7ee4235a3f944aa1fa2249307708f893fe5717dc603503c6c7969c070fb7c", size = 104100 },
+]
+
+[[package]]
+name = "pysensemakr"
+version = "0.0.8"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "jupyter" },
+    { name = "matplotlib" },
+    { name = "numpy" },
+    { name = "pandas" },
+    { name = "scipy" },
+    { name = "statsmodels" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/5e/71/9b68b0969edaacc3649f7fc808ad1c60b30ad90d0ffb959201c37bd13fd4/PySensemakr-0.0.8.tar.gz", hash = "sha256:7ad4ffb9f696bec69835dba8f07d060c0e0600c456fec38cf7caac1d4ecae87c", size = 542646 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/7d/1a/9ab7de774d250cc5582ee246aefd6f9dc4f4df7f80b8089fc33c456a7598/PySensemakr-0.0.8-py3-none-any.whl", hash = "sha256:cd9950f6567b91958d1876c15557cb2e23c2d4eae3fbe05cc3d884bcba989e00", size = 530101 },
 ]
 
 [[package]]
