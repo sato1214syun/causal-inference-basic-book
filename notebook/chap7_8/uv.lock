@@ -284,14 +284,17 @@ name = "chap7"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
+    { name = "gcastle" },
     { name = "graphviz" },
     { name = "kaleido" },
+    { name = "networkx" },
     { name = "numpy" },
     { name = "pandas" },
     { name = "pycaret" },
     { name = "pymc-marketing" },
     { name = "statsmodels" },
     { name = "tfcausalimpact" },
+    { name = "tigramite" },
 ]
 
 [package.dev-dependencies]
@@ -302,14 +305,17 @@ dev = [
 
 [package.metadata]
 requires-dist = [
-    { name = "graphviz" },
+    { name = "gcastle" },
+    { name = "graphviz", specifier = ">=0.20.3" },
     { name = "kaleido", specifier = "==0.2.1" },
+    { name = "networkx" },
     { name = "numpy", specifier = ">=1.26.4" },
     { name = "pandas", specifier = ">=2.1.4" },
     { name = "pycaret", specifier = ">=3.3.2" },
     { name = "pymc-marketing", specifier = ">=0.9.0" },
     { name = "statsmodels", specifier = ">=0.14.4" },
     { name = "tfcausalimpact", specifier = ">=0.0.16" },
+    { name = "tigramite" },
 ]
 
 [package.metadata.requires-dev]
@@ -747,6 +753,24 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/3c/14/c566f5ca00c115db7725263408ff952b8ae6d6a4e792ef9c84e77d9af7a1/gast-0.6.0.tar.gz", hash = "sha256:88fc5300d32c7ac6ca7b515310862f71e6fdf2c029bbec7c66c0f5dd47b6b1fb", size = 27708 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/a3/61/8001b38461d751cd1a0c3a6ae84346796a5758123f3ed97a1b121dfbf4f3/gast-0.6.0-py3-none-any.whl", hash = "sha256:52b182313f7330389f72b069ba00f174cfe2a06411099547288839c6cbafbd54", size = 21173 },
+]
+
+[[package]]
+name = "gcastle"
+version = "1.0.3"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "matplotlib" },
+    { name = "networkx" },
+    { name = "numpy" },
+    { name = "pandas" },
+    { name = "scikit-learn" },
+    { name = "scipy" },
+    { name = "tqdm" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/37/22/8505ddd00d21d8b4a93758bf637a177274c39dd6bc1a88e551b5ea87f8e7/gcastle-1.0.3.tar.gz", hash = "sha256:063065fb3cf130b25611a9a7afc9de9e0665f80537bf95cd47bbc9bbaf10f6cb", size = 129279 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/24/1d/c12be2c0f35d3e9360fe0a561c32fe1caf826ac469dcb87f18a873c0917f/gcastle-1.0.3-py3-none-any.whl", hash = "sha256:703b38713e9459e4ca43a5547e83076b3a9a9b459f0279b84e953a6df71d74dc", size = 214903 },
 ]
 
 [[package]]
@@ -1685,6 +1709,15 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/83/f8/51569ac65d696c8ecbee95938f89d4abf00f47d58d48f6fbabfe8f0baefe/nest_asyncio-1.6.0.tar.gz", hash = "sha256:6f172d5449aca15afd6c646851f4e31e02c598d553a667e38cafa997cfec55fe", size = 7418 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/a0/c4/c2971a3ba4c6103a3d10c4b0f24f461ddc027f0f09763220cf35ca1401b3/nest_asyncio-1.6.0-py3-none-any.whl", hash = "sha256:87af6efd6b5e897c81050477ef65c62e2b2f35d51703cae01aff2905b1852e1c", size = 5195 },
+]
+
+[[package]]
+name = "networkx"
+version = "3.4.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/36/2b/20ad9eecdda3f1b0dc63fb8f82d2ea99163dbca08bfa392594fc2ed81869/networkx-3.4.1.tar.gz", hash = "sha256:f9df45e85b78f5bd010993e897b4f1fdb242c11e015b101bd951e5c0e29982d8", size = 2151310 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/8b/4e/bf7a4ccc11ded738efd0bda39296c7cee3617e800f890f919de5c0fe00c8/networkx-3.4.1-py3-none-any.whl", hash = "sha256:e30a87b48c9a6a7cc220e732bffefaee585bdb166d13377734446ce1a0620eed", size = 1723111 },
 ]
 
 [[package]]
@@ -3030,6 +3063,20 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/bd/55/b5148dcbf72f5cde221f8bfe3b6a540da7aa1842f6b491ad979a6c8b84af/threadpoolctl-3.5.0.tar.gz", hash = "sha256:082433502dd922bf738de0d8bcc4fdcbf0979ff44c42bd40f5af8a282f6fa107", size = 41936 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/4b/2c/ffbf7a134b9ab11a67b0cf0726453cedd9c5043a4fe7a35d1cefa9a1bcfb/threadpoolctl-3.5.0-py3-none-any.whl", hash = "sha256:56c1e26c150397e58c4926da8eeee87533b1e32bef131bd4bf6a2f45f3185467", size = 18414 },
+]
+
+[[package]]
+name = "tigramite"
+version = "5.2.6.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "numpy" },
+    { name = "scipy" },
+    { name = "six" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/2e/4e/1f0dd6c46911630e222783503cbe54727a8eb8adfc09fad94ceab8ead9f8/tigramite-5.2.6.2.tar.gz", hash = "sha256:2c2a7d46efe74004335033bd036a87170e1a75e955e119ef9fdef86a2d52cb8e", size = 301332 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/b2/f4/5156e9e37e475a6fc5a0a1733b296ee49950c85854190b78baf5f483815c/tigramite-5.2.6.2-py3-none-any.whl", hash = "sha256:3ce9ab95e32e9f00f797b1420f4c911fb6c6d1b83ad09956a350f979f8cbe401", size = 296792 },
 ]
 
 [[package]]
