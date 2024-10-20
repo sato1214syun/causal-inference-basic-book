@@ -5,7 +5,7 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
-    "gcastle>=1.0.3",
+    "gcastle>=1.0.4.rc1",
     "graphviz>=0.20.3",
     "kaleido==0.2.1",
     "networkx>=3.4.1",
@@ -16,6 +16,7 @@ dependencies = [
     "statsmodels>=0.14.4",
     "tfcausalimpact>=0.0.16",
     "tigramite>=5.2.6.2",
+    "torch>=2.5.0",
 ]
 
 [tool.uv]
